@@ -32,8 +32,8 @@ app.get('/health', async (req, res) => {
       : 'Backend is running, but database is not connected',
     database: dbConnected ? 'connected' : 'disconnected',
     student: {
-      name: process.env.STUDENT_NAME || 'Nama Mahasiswa',
-      nim: process.env.STUDENT_NIM || '2311523001'
+      name: process.env.STUDENT_NAME || 'Larisa Alifia Handini',
+      nim: process.env.STUDENT_NIM || '2411523026'
     }
   };
 
@@ -49,8 +49,8 @@ app.get('/schema', (req, res) => {
     },
     resource: {
       name: 'treatments',
-      label: 'Be Clinic Treatments',
-      description: 'Aplikasi untuk mengelola data Be Clinic Treatments.'
+      label: 'Clinic Treatments',
+      description: 'Aplikasi untuk mengelola data Clinic Treatments.'
     },
     fields: [
       {
